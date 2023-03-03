@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Footer from './Components/Footer/Footer';
+import ModalPic from './Components/Modal/ModalPic';
+import NavBar from './Components/NavBar/NavBar';
+import BlogPage from './Pages/BlogPage/BlogPage';
+import BudgetPage from './Pages/BudgetPage/BudgetPage';
+import CleanUpsPage from './Pages/CleanUpsPage/CleanUpsPage';
+import CompanyPage from './Pages/CompanyPage/CompanyPage';
+import ConstructionEnd from './Pages/ConstructionEnd/ConstructionEnd';
+import ContactPage from './Pages/ContactPage/ContactPage';
+import EventPage from './Pages/EventPage/EventPage';
+import FurniturePage from './Pages/FurniturePage/FurniturePage';
+import HomePage from './Pages/Homepage/HomePage';
+import IndividualPage from './Pages/IndividualPage/IndividualPage';
+import ServicePageComp from './Pages/ServiceCompanyPage/ServicePageComp';
+import TipsPage from './Pages/TipsPage/TipsPage';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar alt='logoBlue' />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/Empresa' element={< CompanyPage />} />
+        <Route path='/Limpiezas' element={<CleanUpsPage />} />
+        <Route path='/Blog' element={<BlogPage />}  />
+        <Route path='/Contacto' element={<ContactPage />} />
+        <Route path='/Presupuesto' element={<BudgetPage />} />
+        <Route path='/Particulares' element={<IndividualPage />} />
+        <Route path='/Fin-de-obra' element={<ConstructionEnd />} />
+        <Route path='/Muebles' element={< FurniturePage />} />
+        <Route path='/Servicio-empresa' element={< ServicePageComp />} />
+        <Route path='/Eventos' element={< EventPage />} />
+        <Route path='/Consejos' element={< TipsPage />} />
+        
+      </Routes>
+      <Footer href='#' />
     </div>
   );
 }
