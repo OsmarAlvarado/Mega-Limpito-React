@@ -105,11 +105,11 @@ const ContactPage = (props) => {
                 <div>
                     <h1>Contacto</h1>
                     <p>Tambien puedes contactar con nosotros de forma directa</p>
-                    <ul>
-                        <li>Correo Electronico</li>
-                        <li>Instagram</li>
-                        <li>Teléfono</li>
-                    </ul>
+
+                    <li>Correo Electronico</li>
+                    <li>Instagram</li>
+                    <li>Teléfono</li>
+
 
                 </div>
             </div>

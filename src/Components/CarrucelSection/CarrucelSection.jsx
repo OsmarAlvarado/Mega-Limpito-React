@@ -5,27 +5,30 @@ import HandlePic from '../../Assets/Image/handlePic.png'
 import MachinePic from '../../Assets/Image/machinePic.png'
 import { Carousel, CarouselCaption, CarouselControl, CarouselIndicators, CarouselItem } from 'reactstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from '../Button/Button'
+import { Link } from 'react-router-dom'
 
 
 
-const CarrucelSection = (props) => {
+const CarrucelSection = () => {
 
     const items = [
-        {            
-            src: CleanPic ,
+        {
+            src: CleanPic,
             altText: 'Image 1',
-            caption: 'clean'
-        },
-        {            
-            src: HandlePic,
-            altText: 'Image 2',
-            caption: 'handle'
+            caption: 'Bienvenidos a Mega Limpieza',
+            Button: { Button }
         },
         {
-            
-            src:  MachinePic ,
+            src: HandlePic,
+            altText: 'Image 2',
+            caption: 'Tenemos mas de 15 años de experiencia',
+        },
+        {
+
+            src: MachinePic,
             altText: 'Image 3',
-            caption: 'Machine'
+            caption: 'Contáctanos y pide tu presupuesto',
         }
     ];
 
@@ -57,26 +60,35 @@ const CarrucelSection = (props) => {
                 onExited={() => setAnimating(false)}
                 key={item.src}
             >
-                <img src={item.src} alt={item.altText} width='100%' height='450px' />
-                <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+                <img src={item.src} alt={item.altText} width='100%' height='600px' />
+                <Link to={'/Presupuesto'} className='budget'>
+                    <Button classButton='' nameButton='Presupuesto' />
+                </Link>
+                <CarouselCaption captionHeader={item.caption} />
             </CarouselItem>
         );
     });
 
 
     return (
-        <div >
-            <Carousel
-                activeIndex={activeIndex}
-                next={next}
-                previus={previus}
-            >
-                <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-                {slides}
-                <CarouselControl direction='prev' directionText='Previus' onClickHandler={previus} />
-                <CarouselControl direction='next' directionText='Next' onClickHandler={next} />
-            </Carousel>
-        </div>
+
+        <Carousel
+            activeIndex={activeIndex}
+            next={next}
+            previus={previus}
+        >
+
+            <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+
+            {slides}
+
+            <CarouselControl direction='prev' directionText='Previus' onClickHandler={previus} />
+
+            <CarouselControl direction='next' directionText='Next' onClickHandler={next} />
+
+
+        </Carousel>
+
     )
 
 }

@@ -4,7 +4,7 @@ import './CardPresent.css'
 
 const CardPresent = (props) => {
 
-    const { title, paragraph, listOne, ListTwo, listThree, ListFour, ListFive, ListSix, src, alt } = props
+    const { title, paragraphOne, paragraphTwo, listOne, ListTwo, listThree, ListFour, ListFive, ListSix, src, alt } = props
 
     return (
         <article className=''>
@@ -14,17 +14,20 @@ const CardPresent = (props) => {
             <div>
                 <div>
                     <p>
-                        {paragraph}
+                        {paragraphOne}
+                    </p>
+                    <p>
+                        {paragraphTwo}
                     </p>
                     <div className=''>
-                        <ul className=''>
-                            <li>{listOne}</li>
-                            <li>{ListTwo}</li>
-                            <li>{listThree}</li>
-                            <li>{ListFour}</li>
-                            <li>{ListFive}</li>
-                            <li>{ListSix}</li>
-                        </ul>
+
+                        <li>{listOne}</li>
+                        <li>{ListTwo}</li>
+                        <li>{listThree}</li>
+                        <li>{ListFour}</li>
+                        <li>{ListFive}</li>
+                        <li>{ListSix}</li>
+
                     </div>
                 </div>
                 <div>

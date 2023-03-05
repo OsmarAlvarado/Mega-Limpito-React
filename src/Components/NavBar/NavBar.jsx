@@ -14,7 +14,10 @@ const NavBar = (props) => {
 
     return (
         <header className=''>
-            <img className='' src={LogoBlue} alt={alt} />
+            <Link to={'/'} className='homepage'>
+                <img className='' src={LogoBlue} alt={alt} />
+            </Link>
+
             <button className=''>
                 <Link to={'/Presupuesto'} className='budge'>PRESUPUESTO</Link>
             </button>

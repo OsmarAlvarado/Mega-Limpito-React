@@ -4,23 +4,25 @@ import { Carousel, CarouselCaption, CarouselControl, CarouselIndicators, Carouse
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-
 const CarouselService = (props) => {
 
-    const { srcOne, srcTwo, srcThree } = props
+    const { srcOne, srcTwo, srcThree, captionOne, captionTwo, captionThree } = props
 
     const items = [
         {
             src: srcOne,
-            altText: 'Antes y después',
+            altText: 'Image 1',
+            caption: captionOne
         },
         {
             src: srcTwo,
-            altText: 'Antes y después',
+            altText: 'Image 2',
+            caption: captionTwo
         },
         {
             src: srcThree,
-            altText: 'Antes y después',
+            altText: 'Image 3',
+            caption: captionThree
         }
     ];
 
@@ -53,7 +55,7 @@ const CarouselService = (props) => {
                 key={item.src}
             >
                 <img src={item.src} alt={item.altText} width='100%' height='450px' />
-                <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+                <CarouselCaption captionHeader={item.caption} />
             </CarouselItem>
         );
     });
@@ -70,6 +72,7 @@ const CarouselService = (props) => {
                 <CarouselControl direction='prev' directionText='Previus' onClickHandler={previus} />
                 <CarouselControl direction='next' directionText='Next' onClickHandler={next} />
             </Carousel>
+            
         </div>
     )
 

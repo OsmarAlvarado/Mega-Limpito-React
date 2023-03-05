@@ -4,10 +4,9 @@ import Modal from 'react-bootstrap/Modal'
 import './ModalPic.css'
 
 
-
 const ModalPic = (props) => {
     const [show, setShow] = useState(false);
-    const { src, title, subtitle, alt, paragraph } = props
+    const { src, title, subtitle, alt, paragraphOne, paragraphTwo, paragraphThree, Advice } = props
 
     return (
         <div className=''>
@@ -33,11 +32,18 @@ const ModalPic = (props) => {
                 </Modal.Header>
                 <Modal.Body>
                     <p>
-                        {paragraph}
+                        {paragraphOne}
                     </p>
+                    <p>
+                        {paragraphTwo}
+                    </p>
+                    <p>
+                        {paragraphThree}
+                    </p>
+                    <hr />
+                    <h3>{Advice}</h3>
                 </Modal.Body>
             </Modal>
-
         </div>
     );
 
