@@ -21,8 +21,8 @@ function App() {
     <div className="App">
       <NavBar alt='logoBlue' />
       <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/Empresa' element={< CompanyPage />} />
+        <Route path='/' element={<HomePage />} selected />
+        <Route path='/Empresa' element={< CompanyPage selected />} />
         <Route path='/Limpiezas' element={<CleanUpsPage />} />
         <Route path='/Catalogo' element={<CleanUpsPage />} />
         <Route path='/Blog' element={<BlogPage />}  />

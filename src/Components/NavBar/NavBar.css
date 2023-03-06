@@ -1,0 +1,168 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    width: 100%;
+    height: 100px;
+    background: #1995a3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    position: fixed;
+    z-index: 10;
+}
+
+img.logoBlue {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    position: relative;
+}
+
+img.logoBlue:before {
+    background: #0d326f;
+    border-radius: 50%;
+    animation: shadow324 0.5s linear infinite;
+}
+
+article.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 32px;
+    gap: 40px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.menu a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    height: 2em;
+    width: 5em;
+    text-align: center;
+    line-height: 2em;
+    text-transform: capitalize;
+    position: relative;
+    transition: 0.5s;
+}
+
+.menu a::before,
+.menu a::after {
+    content: '';
+    position: absolute;
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 50%;
+    transition: 0.5s cubic-bezier(0.5, -0.5, 0.25, 1.5);
+    top: calc(50% - 0.6em / 2);
+}
+
+.menu a::before {
+    left: 0;
+    z-index: -1;
+}
+
+.menu a::after {
+    right: 0;
+    z-index: -2;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.menu a:hover::before,
+.menu a:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background-color: dodgerblue;
+}
+
+.menu a:hover::before {
+    top: 0;
+}
+
+.menu a:hover::after {
+    right: -0.4em;
+    filter: brightness(0.8);
+}
+
+a.cleanUp {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    align-items: center;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.nav-item {
+    margin-left: -60px;
+}
+
+.homepage,
+.company,
+.cleanUp,
+.blog,
+.contact {
+    width: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.budgeHome {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.budgeHome::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #1995a3;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+
+  .budgeHome::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #1995a3;
+    transition: 0.5s;
+  }
+
+  .budgeHome:hover::before, .budgeHome:hover::after {
+    transform: scale(0)
+  }
+
+  .budgeHome:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }

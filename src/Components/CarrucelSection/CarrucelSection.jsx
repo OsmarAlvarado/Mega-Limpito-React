@@ -17,7 +17,6 @@ const CarrucelSection = () => {
             src: CleanPic,
             altText: 'Image 1',
             caption: 'Bienvenidos a Mega Limpieza',
-            Button: { Button }
         },
         {
             src: HandlePic,

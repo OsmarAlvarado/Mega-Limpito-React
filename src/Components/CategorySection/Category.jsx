@@ -10,7 +10,8 @@ const Category = () => {
 
     return (
         <article className='Section5'>
-            <div className=''>
+            <br />
+            <div className='cardAll'>
                 <CardCategory src={IndPic} title='Particulares'  />
                 <CardCategory src={EmpresaPic} title='Empresa'  />
                 <CardCategory src={FinDeObraPic} title='Fin de obra'  />

@@ -10,7 +10,7 @@ import WeAreUs from '../../Assets/Image/Quienes-somos.jpg'
 const HomePage = () => {
 
     return (
-        <div className='home'>
+        <div>
             <CarrucelSection />
             <AboutUs title='Bienvenid@s' src={WeAreUs} alt='hombre-limpiando' />
             <Furniture />
