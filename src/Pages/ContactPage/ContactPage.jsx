@@ -27,6 +27,7 @@ const ContactPage = (props) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = (userInfo) => {
+        window.alert('Te contactaremos pronto.')
         console.log(userInfo);
     }
 

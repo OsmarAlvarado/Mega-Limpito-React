@@ -1,6 +1,5 @@
 import CardPresent from "../../Components/CardPresent/CardPresent"
 import CarouselService from "../../Components/CarouselService/CarouselService"
-import Form from "../../Components/Form/Form"
 import IndPresent from '../../Assets/Image/Particulares-present.jpg'
 import IndCarouselOne from '../../Assets/Image/Particulares Green Self Love.png'
 import IndCarouselTwo from '../../Assets/Image/Particulares-Cocina Grids Collage.png'
@@ -29,11 +28,6 @@ const IndividualPage = () => {
                 captionOne='Hornos' captionTwo='Lavaderos' captionThree='Cocinas en general'
             />
             <ApplicationBudge paragraph='¿Necesitas una limpieza en tu domicilio?' />
-            {/* <div className="sectionApplication">
-                <h1 className="applicationH">Solicita tu presupuesto</h1>
-                <p className="ApplicationP">¿Necesitas una limpieza en tu domicilio?</p>
-                <Form />
-            </div> */}
         </article>
     )
 

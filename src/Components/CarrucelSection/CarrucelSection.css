@@ -9,7 +9,7 @@
 } */
 
 .header .carouselHome {
-    width: 100%;
+    width: 1280px;
     width: auto;
 
 }
@@ -19,7 +19,7 @@
     display: flex;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #e8f2fa;
-    width: 100%;
+    width: 1280px;
     height: 800px;
     display: flex;
     align-items: end;
@@ -77,4 +77,5 @@ div .carousel-caption {
 
 .carousel-caption h3 {
     font-size: 45px;
+    color: rgb(103, 225, 225);
 }

@@ -22,7 +22,7 @@ const Footer = () => {
                     </Link>
                 </div>
                 <div className='RowSocial'>
-                    
+
                     <a href="https://www.facebook.com/profile.php?id=100076604168289">
                         <img className='faceLogo' src={FacebookLogo} alt="facebook-logo" />
                     </a>

@@ -5,7 +5,6 @@ import AboutUs from '../../Components/AboutUs/AboutUs';
 import Furniture from '../../Components/FurnitureSection/Furniture';
 import Category from '../../Components/CategorySection/Category';
 import WeAreUs from '../../Assets/Image/Quienes-somos.jpg'
-import NavBar from '../../Components/NavBar/NavBar';
 
 
 

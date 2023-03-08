@@ -1,5 +1,5 @@
 .cleanUp {
-    width: 100%;
+    width: 1280px;
     height: auto;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .UsService p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     height: 20px;
     line-height: 30px;

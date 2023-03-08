@@ -1,6 +1,5 @@
 import CardPresent from "../../Components/CardPresent/CardPresent"
 import CarouselService from "../../Components/CarouselService/CarouselService"
-import Form from "../../Components/Form/Form"
 import FurniturePresent from '../../Assets/Image/Mueble-present.jpg'
 import FurnitureCarouselOne from '../../Assets/Image/AlfombraAD.jpg'
 import FurnitureCarouselTwo from '../../Assets/Image/Colchon AD Carousel Grids Collage.png'

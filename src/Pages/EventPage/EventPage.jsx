@@ -1,6 +1,5 @@
 import CardPresent from "../../Components/CardPresent/CardPresent"
 import CarouselService from "../../Components/CarouselService/CarouselService"
-import Form from "../../Components/Form/Form"
 import EventPresent from '../../Assets/Image/Limpieza-Eventos.png'
 import EventCarouselOne from '../../Assets/Image/Eventos 1 Grids Collage.png'
 import EventCarouselTwo from '../../Assets/Image/Evento 2.jpeg'

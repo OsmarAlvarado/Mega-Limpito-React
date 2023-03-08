@@ -6,7 +6,7 @@
     align-items: flex-start;
     padding: 44px 36px;
     gap: 8px;
-    width: 100%;
+    width: 1280px;
     height: 600px;
     flex: none;
 }
@@ -105,9 +105,11 @@
 
 .section4 {
     
-    width: 100%;
+    width: 1280px;
     height: auto;
     /* display: flex; */
+    background-color: beige;
+    box-shadow: cornsilk;
 }
 
 .section4 h1 {

@@ -1,6 +1,5 @@
 import './CleanUpsPage.css'
 import { Link } from "react-router-dom"
-import Button from "../../Components/Button/Button"
 import CardCategory from "../../Components/CardCategory/CardCategory"
 import Particulares from '../../Assets/Image/Particulares-Cocina Grids Collage.png'
 import Empresa from '../../Assets/Image/limpieza-oficinas.jpg'
