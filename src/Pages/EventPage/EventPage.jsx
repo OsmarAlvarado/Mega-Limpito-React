@@ -5,6 +5,7 @@ import EventPresent from '../../Assets/Image/Limpieza-Eventos.png'
 import EventCarouselOne from '../../Assets/Image/Eventos 1 Grids Collage.png'
 import EventCarouselTwo from '../../Assets/Image/Evento 2.jpeg'
 import EventCarouselThree from '../../Assets/Image/Evento 3.jpg'
+import ApplicationBudge from "../../Components/ApplicationBudge/ApplicationBudge"
 
 
 const EventPage = () => {
@@ -28,11 +29,7 @@ const EventPage = () => {
                 captionOne='Fiestas en locales' captionTwo='Convenciones' captionThree='Fiestas y recepciones'
             />
 
-            <div className="">
-                <h1>Solicita tu presupuesto</h1>
-                <p>¿Necesitas una limpieza en tu domicilio?</p>
-                <Form />
-            </div>
+            <ApplicationBudge paragraph='¿Necesitas una limpieza para tus eventos?' />
 
         </article>
     )

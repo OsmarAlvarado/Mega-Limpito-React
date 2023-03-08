@@ -1,0 +1,232 @@
+.errCamp {
+    color: #bf1650;
+    font-size: 14px;
+    text-align: left;
+}
+
+.errCamp::before {
+    display: inline;
+    content: "⚠ ";
+}
+
+.formAll {
+    width: 100%;
+    height: auto;
+    background-color: bisque;
+    background-image: url(/src/Assets/Image/persona-computadora.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(50 white);
+}
+
+.formAll form {
+    padding: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    gap: 5px;
+    
+    background-color: transparent;
+    border-radius: 4px;
+    color: #333;
+    box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+}
+
+.form::after {
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #1a044e;
+}
+
+.form input {
+    border: none;
+    border-bottom: 1px solid #1a311e;
+    transition: all .25s ease;
+    background-color: transparent;
+    height: 20px;
+}
+
+.form input:focus {
+    outline: none;
+    border-bottom: 1px solid #0d095e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
+    font-size: 18px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-left: 500px;
+}
+
+.name label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #374151;
+}
+
+.name input {
+    /* border: none; */
+    border-bottom: 1px solid #1a311e;
+    width: 300px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-left: 500px;
+}
+
+.email label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #374151;
+}
+
+.email input {
+
+    width: 300px;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-left: 500px;
+}
+
+.phone label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #374151;
+}
+
+.phone input {
+    width: 260px;
+}
+
+.phonebox select {
+    background-color: transparent;
+    width: 42px;
+    height: 20px;
+    border-right: #333;
+    color: #374151;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    border-left: none;
+}
+
+.CP {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-left: 500px;
+}
+
+.CP label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #374151;
+}
+
+.CP input {
+    width: 300px;
+}
+
+.area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-left: 500px;
+}
+
+.area label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #374151;
+}
+
+.area textarea {
+    background-color: transparent;
+    width: 300px;
+    height: 150px;
+}
+
+.checkBoxForm {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    margin-left: 626px;
+}
+
+.checkBoxForm input {
+    display: flex;
+    flex-direction: row;
+    width: 16px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.checkBoxForm p {
+    display: flex;
+    margin-right: 30px;
+}
+
+p.polytic {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    width: 381px;
+    height: 16px;
+}
+
+.polytic a {
+    color: #374151;
+    text-decoration: none;
+}
+
+.polytic a:hover {
+    color: #07df64;
+}
+
+.form button {
+    display: flex;
+    border-radius: 30px;
+    background-color: #1b833c;
+    color: #FFF;
+    padding: 12px 25px;
+    font-size: 14px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: all .25s ease;
+    box-shadow: -5px 6px 20px 0px rgba(26, 26, 26, 0.4);
+    z-index: 10;
+    margin-left: 500px;
+}
+
+.form button:hover {
+    background-color: #07df64;
+    box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
+}

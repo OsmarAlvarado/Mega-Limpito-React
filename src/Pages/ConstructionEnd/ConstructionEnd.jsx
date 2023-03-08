@@ -5,6 +5,8 @@ import CleanConstructionEnd from '../../Assets/Image/limpieza-final-obra.jpg'
 import EndCarouselOne from '../../Assets/Image/Fin de obra Carousel 3 Grids Collage.png'
 import EndCarouselTwo from '../../Assets/Image/Fin de obra Collage Blank.png'
 import EndCarouselThree from '../../Assets/Image/Fin de Obra Servicio Grids Collage.png'
+import ApplicationBudge from "../../Components/ApplicationBudge/ApplicationBudge"
+
 
 
 const ConstructionEnd = () => {
@@ -29,12 +31,7 @@ const ConstructionEnd = () => {
                 captionOne='Cocinas' captionTwo='Baños y lavaderos' captionThree='Baños'
             />
 
-            <div>
-                <h1>Solicita tu presupuesto</h1>
-                <p>¿Necesitas una limpieza en tu domicilio?</p>
-                <Form />
-            </div>
-
+            <ApplicationBudge paragraph='¿Necesitas una limpieza de fin de obra?' />
         </article>
     )
 

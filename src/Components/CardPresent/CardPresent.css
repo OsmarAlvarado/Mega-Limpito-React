@@ -1,0 +1,60 @@
+.sectionCardP {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(180, 240, 240, 0.77);
+    box-shadow: 0px 1px 4px rgba(227, 222, 215, 0.8);
+    padding-top: 140px;
+    padding-bottom: 40px;
+}
+
+.titleCardP {
+    color: rgb(117, 128, 128);
+}
+
+.CardAllP {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    gap: 100px; 
+    align-items: center;
+    align-content: center;
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+.serviceP {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviceP p {
+    color: rgb(117, 128, 128);
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.ListServiceP {
+    color: rgb(117, 128, 128);
+}
+
+li{
+    display: flex;
+    justify-content: flex-start;    
+}
+
+.imgServP {
+    width: 50%;
+}
+
+.imgServP img {
+    width: 500px;
+    height: 600px;
+    border-radius: 10%;
+}
+

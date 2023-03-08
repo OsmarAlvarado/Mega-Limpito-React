@@ -9,12 +9,12 @@ import CleanEvent from '../../Assets/Image/Limpieza-Eventos.png'
 const TipsPage = () => {
 
     return (
-        <article className=''>
-            <h3>Consejos importantes</h3>
-            <p>Puedes observar en cada uno de nuestros consejos, formas en las que puedes
+        <article className='TipsPageAll'>
+            <h3 className='TipsPageH'>Consejos importantes</h3>
+            <p className='TipsPageP'>Puedes observar en cada uno de nuestros consejos, formas en las que puedes
                 resolver dudas y sobre todo hacer que tus espacios esten limpios.
             </p>
-            <div>
+            <div className='modalTipAll'>
                 <ModalPic src={CleanHome} title='CONSEJOS-LIMPIEZA-HOGAR' subtitle='Consejos de limpieza para tu hogar' alt='limpieza-hogar'
                     paragraphOne='Opcion 1: La más sencilla, la que te evitará problemas innecesarios, y la que te permitirá disfrutar de más tiempo y de calidad con los tuyos. Contratar a una persona para que vaya a tu casa a limpiar.'
                     paragraphTwo='Opcion 2: Hacerte cargo de la limpieza tu mism@. Con los pros y contras que esto genera por cuestiones de tiempo y efectividad de la limpieza.'

@@ -9,15 +9,31 @@ const ModalPic = (props) => {
     const { src, title, subtitle, alt, paragraphOne, paragraphTwo, paragraphThree, Advice } = props
 
     return (
-        <div className=''>
+        <div className='modalPic'>
 
-            <img src={src} alt={alt} />
-            <h3>{title}</h3>
-            <p>{subtitle}</p>
+            <div className="flip-card">
+                <div className="flip-card-inner">
+                    <div className="flip-card-front">
+                        <img className='modalImg' src={src} alt={alt} />
+                    </div>
+                    <div className="flip-card-back">
+                        <h3 className='title'>{title}</h3>
+                        <p className='ModalP'>{subtitle}</p>
+                        <Button variant="primary" onClick={() => setShow(true)}>
+                            Ver detalles
+                        </Button>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* <img className='modalImg' src={src} alt={alt} />
+            <h3 className='modalH'>{title}</h3>
+            <p className='ModalP'>{subtitle}</p>
 
             <Button variant="primary" onClick={() => setShow(true)}>
                 Ver detalles
-            </Button>
+            </Button> */}
 
             <Modal
                 show={show}

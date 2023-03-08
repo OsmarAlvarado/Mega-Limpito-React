@@ -9,7 +9,8 @@ const TipsSection = () => {
 
     return (
 
-        <div className=''>
+        <div className='ModalThreeImg'>
+            
             <ModalPic
                 src={CleanHome}
                 title='CONSEJOS-LIMPIEZA-HOGAR'

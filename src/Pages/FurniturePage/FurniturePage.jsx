@@ -5,7 +5,7 @@ import FurniturePresent from '../../Assets/Image/Mueble-present.jpg'
 import FurnitureCarouselOne from '../../Assets/Image/AlfombraAD.jpg'
 import FurnitureCarouselTwo from '../../Assets/Image/Colchon AD Carousel Grids Collage.png'
 import FurnitureCarouselThree from '../../Assets/Image/Mueble negro Grids Collage.png'
-
+import ApplicationBudge from "../../Components/ApplicationBudge/ApplicationBudge"
 
 
 const FurniturePage = () => {
@@ -29,11 +29,7 @@ const FurniturePage = () => {
                 captionOne='Alfombras' captionTwo='Colchones' captionThree='Sofás'
             />
 
-            <div>
-                <h1>Solicita tu presupuesto</h1>
-                <p>¿Necesitas una limpieza en tu domicilio?</p>
-                <Form />
-            </div>
+            <ApplicationBudge paragraph='¿Necesitas una limpieza y desinfeccion para tus muebles?' />
         </article>
     )
 

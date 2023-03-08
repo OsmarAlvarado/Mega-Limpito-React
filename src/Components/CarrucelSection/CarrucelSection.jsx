@@ -60,9 +60,9 @@ const CarrucelSection = () => {
                 key={item.src}
             >
                 <img src={item.src} alt={item.altText} width='100%' height='600px' />
-                <Link to={'/Presupuesto'} className='budget'>
+                {/* <Link to={'/Presupuesto'} className='budget'>
                     <Button classButton='' nameButton='Presupuesto' />
-                </Link>
+                </Link> */}
                 <CarouselCaption captionHeader={item.caption} />
             </CarouselItem>
         );
@@ -71,7 +71,7 @@ const CarrucelSection = () => {
 
     return (
 
-        <Carousel
+        <Carousel className='carouselHome'
             activeIndex={activeIndex}
             next={next}
             previus={previus}

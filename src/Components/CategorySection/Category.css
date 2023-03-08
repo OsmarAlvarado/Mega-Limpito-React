@@ -8,7 +8,47 @@
 
 .cardAll {
     display: flex;
-    padding: 30px;    
-    width: auto;
+    align-items: center;
+    width: 1200px;
     height: 500px;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+/* card Categories */
+
+.cardAll .categories {
+    margin-top: -90px;
+    padding: 5px;
+    width: 400px;
+    height: 500px;
+    box-sizing: border-box;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.categories:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.categories:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.categories img {
+    width: 380px;
+    height: 400px;
+}
+
+.categories h3 {
+    padding: 30px;
 }

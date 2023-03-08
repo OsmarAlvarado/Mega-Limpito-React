@@ -1,0 +1,78 @@
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 260px;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    gap: 100px;
+}
+
+.rowFooter .TextContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    width: 400px;
+    gap: 20px;
+    height: auto;
+}
+
+.TextContent h4 {
+    width: 240px;
+    font-size: 30px;    
+    text-align: start;
+    color: white;
+}
+
+.TextContent p {
+    color: white;
+    text-align: start;
+    font-size: 15px;
+}
+
+.rowFooter .imgLogo {
+    display: flex;
+    width: 400px;
+    height: 300px;
+    height: auto;
+}
+
+.imgLogo img {
+    padding-left: 20px;
+    width: 250px;
+    width: 250px;
+    margin-left: 50px;
+}
+
+.rowFooter .RowSocial {
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    width: 400px;
+    gap: 10px;
+    margin-left: 30px;
+    height: auto;
+}
+
+.RowSocial img {
+    
+    outline: none;
+    border: 1px solid #303030;
+    color: #ae00ff;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.RowSocial img:hover {
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    transition-delay: 0.1s;
+}

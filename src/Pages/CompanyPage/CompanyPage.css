@@ -1,0 +1,217 @@
+.aboutUsC {
+    background: rgba(227, 222, 215, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.aboutUsC h1 {
+    display: flex;
+    text-align: center;
+    text-shadow: 15px;
+    box-shadow: 5px;
+    margin-top: 130px;
+}
+
+.aboutUsC article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    width: 1200px;
+    height: 500px;
+    padding-left: 50px;
+    padding-top: 90px;
+}
+
+.abaoutRowC div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 523px;
+    height: 450px;
+    flex: none;
+    flex-grow: 1;
+}
+
+.rowOneC span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.rowOneC p {
+    text-align: start;
+    font-size: 14px;
+}
+
+.rowOneC a {
+    text-decoration: none;
+}
+
+.rowOneC button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+    border-radius: 30px;
+    border: 1px solid #8F9092;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    font-weight: 600;
+    color: #606060;
+    text-shadow: 0 1px #fff;
+}
+
+.rowOneC button:hover {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+
+.rowOneC button:active {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.rowOneC button:focus {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.imgRowC img {
+    width: 560px;
+    height: 390px;
+    border-radius: 10px;
+}
+
+.abaoutRowC .imgRowC {
+    margin-bottom: 70px;
+}
+
+/* setcategory */
+
+.sectCategory {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1240px;
+    background-color: beige;
+    gap: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+
+.sectCategory h1 {
+    padding: 40px;
+    font-size: 50px;
+}
+
+.cardwrappOne {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.cardwrappOne .categoriesC {
+    padding: 5px;
+    width: 400px;
+    height: 500px;
+    box-sizing: border-box;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    cursor: pointer;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.categoriesC:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.categoriesC:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.categoriesC img {
+    width: 380px;
+    height: 400px;
+}
+
+.categoriesC h3 {
+
+    font-size: 25px;
+    height: 5px;
+}
+
+.categoriesC p {
+    padding: 20px;
+    font-size: 12px;
+}
+
+.cardwrappTwo .categoriesC {
+    padding: 5px;
+    width: 400px;
+    height: 500px;
+    box-sizing: border-box;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.cardwrappTwo {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+}
+
+/* Set Formulario */
+
+.FormC {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    background-color: rgb(112, 222, 222);
+}
+
+.FormC h1 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.FormC p {
+    font-size: 18px;
+    padding: 20px;
+    line-height: 10px;
+    margin-bottom: 10px;
+}

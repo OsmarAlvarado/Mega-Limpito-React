@@ -1,0 +1,29 @@
+.footer .reserved {
+    width: 100%;
+    background-color: rgb(60, 59, 59);
+    height: auto;
+}
+
+.reserved {
+    display: flex;
+    background-color: rgb(60, 59, 59);
+    align-items: center;
+    flex-direction: row;
+    line-height: 50px;
+    height: auto;
+    box-shadow: black;
+    text-align: center;
+    justify-content: center;
+}
+
+.reserved a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.reserved a:hover {
+    color: aqua
+}

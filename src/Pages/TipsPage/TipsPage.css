@@ -1,0 +1,34 @@
+.TipsPageAll{
+    width: 100%;
+    height: auto;
+    background-color: cornflowerblue;
+    padding-top: 150px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.TipsPageAll .TipsPageH{
+    font-size: 50px;
+    color: azure;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+.TipsPageAll .TipsPageP{
+    font-size: 20px;
+    color: azure;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+.modalTipAll{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+

@@ -1,0 +1,18 @@
+.sectionApplication {
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sectionApplication h1 {
+    font-size: 50px;
+    color: rgb(31, 20, 75);
+}
+
+.sectionApplication .ApplicationP {
+    font-size: 25px;
+    color: rgb(31, 20, 75);
+}

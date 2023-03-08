@@ -121,6 +121,11 @@ a.cleanUp {
     align-items: center;
 }
 
+.nav-item div {
+    background-color: #1995a3;
+    border-radius: transparent;    
+}
+
 .budgeHome {
     width: 10em;
     position: relative;
@@ -145,9 +150,9 @@ a.cleanUp {
     background-color: #1995a3;
     transition: 0.5s;
     transform-origin: center;
-  }
+}
 
-  .budgeHome::before {
+.budgeHome::before {
     content: "";
     transform-origin: center;
     position: absolute;
@@ -157,12 +162,13 @@ a.cleanUp {
     height: 40%;
     background-color: #1995a3;
     transition: 0.5s;
-  }
+}
 
-  .budgeHome:hover::before, .budgeHome:hover::after {
+.budgeHome:hover::before,
+.budgeHome:hover::after {
     transform: scale(0)
-  }
+}
 
-  .budgeHome:hover {
+.budgeHome:hover {
     box-shadow: inset 0px 0px 25px #1479EA;
-  }
+}

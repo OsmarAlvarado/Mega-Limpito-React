@@ -1,0 +1,19 @@
+.budgeForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(194, 195, 201);
+    padding-top: 150px;
+}
+
+.budgeH {
+    font-size: 50px;
+    color: rgb(138, 138, 133);
+}
+
+.budgeP {
+    font-size: 20px;
+    color: rgb(138, 138, 133);
+}
+

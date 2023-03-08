@@ -72,7 +72,7 @@ const CarouselService = (props) => {
                 <CarouselControl direction='prev' directionText='Previus' onClickHandler={previus} />
                 <CarouselControl direction='next' directionText='Next' onClickHandler={next} />
             </Carousel>
-            
+
         </div>
     )
 

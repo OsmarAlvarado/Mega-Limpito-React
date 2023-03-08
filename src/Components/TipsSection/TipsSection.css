@@ -1,0 +1,11 @@
+.ModalThreeImg{
+    width: 100%;
+    height: 600px;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: center;
+    padding-top: 40px;
+}
+

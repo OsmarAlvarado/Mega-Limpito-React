@@ -1,3 +1,4 @@
+import { clear } from '@testing-library/user-event/dist/clear';
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import Button from '../Button/Button'
@@ -14,7 +15,7 @@ const messages = {
 };
 
 const patterns = {
-    name: /^[A-Za-z]+$/i,
+    name: /^[A-Za-z ]+$/i,
     mail: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
     phone: /^[0-9]+$/i,
     CP: /^[0-5]+$/i,
@@ -28,17 +29,21 @@ const Form = (props) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = (userInfo) => {
+        window.alert('Hemos recibido tu informacion, pronto te contactaremos')
         console.log(userInfo);
+
     }
 
+
+
     return (
-        <div className=''>
-            <form className="form" action="#" method="get" onSubmit={handleSubmit(onSubmit)}>
+        <div className='formAll'>
+            <form className="form" action="#" method="get" onSubmit={handleSubmit(onSubmit)} >
                 <article className="name">
-                    <label htmlFor="name">
+                    <label htmlFor="name" >
                         Nombre Completo
                     </label>
-                    <input name="name" type="text" id="fname"
+                    <input name="name" type="text" id="fname" placeholder='Coloque su nombre'
                         className={errors.name && "error"}
                         {...register("name", {
                             required: messages.required, pattern: {
@@ -53,7 +58,7 @@ const Form = (props) => {
                         Email
                     </label>
                     <input name="mail" type="text" id="email"
-                        placeholder="adrian@gammatech.scholl"
+                        placeholder="Hola@correo.com"
                         className={errors.mail && "error"}
                         {...register("mail", {
                             required: messages.required,
@@ -93,10 +98,10 @@ const Form = (props) => {
                     {errors.phone && <p className="errCamp">{errors.phone.message}</p>}
                 </article>
                 <article className="CP">
-                    <label htmlFor="CP" placeholder='12345' >
+                    <label htmlFor="CP">
                         Codigo Postal
                     </label>
-                    <input name="CP" type="num" id="fCP"
+                    <input name="CP" type="num" id="fCP" placeholder='12345'
                         className={errors.CP && "error"}
                         {...register("CP", {
                             required: messages.required, pattern: {
@@ -138,15 +143,12 @@ const Form = (props) => {
                             }
                         })}
                     />
-                    <p className="polytic"> He leído y acepto la <a href={props.href}><b>Política de
-                        Privacidad</b></a></p>
+                    <p className="polytic"> He leído y acepto la <a href={props.href}> <b>    Política de
+                        Privacidad </b></a></p>
                     {errors.checked && <p className="errCamp">{errors.checked.message}</p>}
                 </article>
                 <Button type="submit" classButton='enviarForm' href={props.href} nameButton='Enviar' />
             </form>
-            <div className='formImg'>
-                <img src={props.src} alt={props.alt} />
-            </div>
         </div>
     )
 

@@ -12,9 +12,24 @@ const Category = () => {
         <article className='Section5'>
             <br />
             <div className='cardAll'>
-                <CardCategory src={IndPic} title='Particulares'  />
-                <CardCategory src={EmpresaPic} title='Empresa'  />
-                <CardCategory src={FinDeObraPic} title='Fin de obra'  />
+                <CardCategory src={IndPic} title='Particulares'
+                    categories='categories'
+                    imgCateg='imgCategory'
+                    categoryH='categoriesH3'
+                    categoryP='categoriesParagraph'
+                />
+                <CardCategory src={EmpresaPic} title='Empresa'
+                    categories='categories'
+                    imgCateg='imgCategory'
+                    categoryH='categoriesH3'
+                    categoryP='categoriesParagraph'
+                />
+                <CardCategory src={FinDeObraPic} title='Fin de obra'
+                    categories='categories'
+                    imgCateg='imgCategory'
+                    categoryH='categoriesH3'
+                    categoryP='categoriesParagraph'
+                />
             </div>
         </article>
     )

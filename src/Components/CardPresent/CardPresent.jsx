@@ -7,19 +7,19 @@ const CardPresent = (props) => {
     const { title, paragraphOne, paragraphTwo, listOne, ListTwo, listThree, ListFour, ListFive, ListSix, src, alt } = props
 
     return (
-        <article className=''>
-            <h1>
+        <article className='sectionCardP'>
+            <h1 className='titleCardP'>
                 {title}
             </h1>
-            <div>
-                <div>
-                    <p>
+            <div className='CardAllP'>
+                <div className='serviceP'>
+                    <p className='ServOne'>
                         {paragraphOne}
                     </p>
-                    <p>
+                    <p className='ServTwo'>
                         {paragraphTwo}
                     </p>
-                    <div className=''>
+                    <div className='ListServiceP'>
 
                         <li>{listOne}</li>
                         <li>{ListTwo}</li>
@@ -30,7 +30,7 @@ const CardPresent = (props) => {
 
                     </div>
                 </div>
-                <div>
+                <div className='imgServP'>
                     <img src={src} alt={alt} />
                 </div>
             </div>

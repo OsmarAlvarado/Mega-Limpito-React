@@ -7,7 +7,7 @@ import CompanyPresent from '../../Assets/Image/Empresa-Present.jpeg'
 import CleanCompanyOne from '../../Assets/Image/Limpieza-empresa.jpg'
 import CleanCompanyTwo from '../../Assets/Image/limpieza-oficinas.jpg'
 import CleanCompanyThree from '../../Assets/Image/Empresa-CarouselThree.jpg'
-
+import ApplicationBudge from "../../Components/ApplicationBudge/ApplicationBudge"
 
 
 const ServicePageComp = () => {
@@ -32,11 +32,7 @@ const ServicePageComp = () => {
                 captionOne='Oficinas' captionTwo='Hooks' captionThree='Naves'
             />
 
-            <div>
-                <h1>Solicita tu presupuesto</h1>
-                <p>¿Necesitas una limpieza en tu domicilio?</p>
-                <Form />
-            </div>
+            <ApplicationBudge paragraph='¿Necesitas una limpieza para tu empresa o negocio?' />
         </article>
     )
 

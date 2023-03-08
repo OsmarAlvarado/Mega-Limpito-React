@@ -1,13 +1,12 @@
 import CardPresent from "../../Components/CardPresent/CardPresent"
 import CarouselService from "../../Components/CarouselService/CarouselService"
-// import MattersWhite from '../../Assets/Image/AD-colchon-blanco.jpg'
-// import FurnitureBlack from '../../Assets/Image/AD-mueble-negro.jpg'
-// import CouchWhite from '../../Assets/Image/AD-sofa-blanco.jpg'
 import Form from "../../Components/Form/Form"
 import IndPresent from '../../Assets/Image/Particulares-present.jpg'
 import IndCarouselOne from '../../Assets/Image/Particulares Green Self Love.png'
 import IndCarouselTwo from '../../Assets/Image/Particulares-Cocina Grids Collage.png'
 import IndCarouselThree from '../../Assets/Image/Particulares-cocinas2 Grids Collage.png'
+import './IndividualPage.css'
+import ApplicationBudge from "../../Components/ApplicationBudge/ApplicationBudge"
 
 
 const IndividualPage = () => {
@@ -27,13 +26,14 @@ const IndividualPage = () => {
                 ListSix='Limpieza de Síndrome de Diógenes.'
             />
             <CarouselService srcOne={IndCarouselOne} srcTwo={IndCarouselTwo} srcThree={IndCarouselThree}
-            captionOne='Hornos' captionTwo='Lavaderos' captionThree='Cocinas en general'
+                captionOne='Hornos' captionTwo='Lavaderos' captionThree='Cocinas en general'
             />
-            <div>
-                <h1>Solicita tu presupuesto</h1>
-                <p>¿Necesitas una limpieza en tu domicilio?</p>
+            <ApplicationBudge paragraph='¿Necesitas una limpieza en tu domicilio?' />
+            {/* <div className="sectionApplication">
+                <h1 className="applicationH">Solicita tu presupuesto</h1>
+                <p className="ApplicationP">¿Necesitas una limpieza en tu domicilio?</p>
                 <Form />
-            </div>
+            </div> */}
         </article>
     )
 
